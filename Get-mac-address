@@ -1,0 +1,10 @@
+ $macs = get-vm | Get-VirtualNetworkAdapter | select name,EthernetAddress 
+ foreach ($mac in $macs)
+ {
+    if ($mac.EthernetAddress -like "*c:38")
+    {
+      $mac.name
+      $mac.EthernetAddress
+    }
+
+ } 
