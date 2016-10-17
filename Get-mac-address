@@ -6,5 +6,4 @@
       $mac.name
       $mac.EthernetAddress
     }
-
  } 
